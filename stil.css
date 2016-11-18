@@ -11,33 +11,9 @@ html{
   	background-size: cover;
 }
 
-#desno{
-	float: right;
-	position: relative;
-	margin-right: 2%;
-	width: 5%;
-	height: 15%;
-	background-color: #000;
-}
-
-img.bg {
-  /* Set rules to fill background*/ 
-  min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
+@media (max-width: 1000px) { /* Specific to this particular image */
+  #logo {
+  	font-size: 10px;
   }
 }
 
@@ -45,15 +21,18 @@ img.bg {
 	padding-left: 50%;
 }
 nav{
-	
-	margin-top: 4%;
 	margin-right: 5%;
 	margin-left: 5%;
-	opacity: 0.6;
+	position: fixed;
+	background-color: #5f5f5f;
+	font-color: #ffffff !important;
+	margin-top: 4%;
+	padding-right: 5%;
+	opacity: 0.7;
 
 }
 #kolone3 {
-	margin-top: 20%;
+	margin-top: 15em;
 	display:inline-block;	
 	position: relative;
 	float: left;
@@ -62,42 +41,113 @@ nav{
 }
 
 #kolone {
-	margin-top: 10%;
+	margin-top: 15em;
 	display:inline-block;	
 	position: relative;
 	float: left;
-	margin-right: 15%;
+	margin-right: 5%;
 	margin-left: 5%;
+	width: 90%;
+}
+#koloneK {
+	margin-top: 24em;
+	display:inline-block;	
+	position: relative;
+	float: left;
+	margin-right: 5%;
+	margin-left: 5%;
+	width: 90%;
 }
 #okvir img{
 	width: 16em;
 	height: 16em;
 }
-#forma{
-	width: 30em;
+#soba img{
+	margin-top: 2%;
+	height: 16em;
+	width: 35em;
+}
+#kuh img{
+	margin-top: 2%;
+	height: 16em;
+	width: 20em;
+}
+#forma,#soba{
+	margin-top: 3em;
+	width: 35em;
+	height: 16em;
+	margin-right: 2%;
+	margin-left:2%; 
+	position: relative;
+	float: left;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+
+#kuh{
+	margin-top: 3em;
+	width: 20em;
 	height: 16em;
 	margin-left: 2%;
-	padding-right:2%; 
 	margin-right: 2%;
-	padding-right: 2%;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	float: left;
+	display: inline-block;
 }
+#kuh p,#soba p{
+	color: #fff;
+	height: 10em;
+	width: 16em;
+	display: inline-block;
+	position: relative;
+}
+#adresa{
+	margin-top: 3em;
+	width: 20em;
+	height: 16em;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: #000;
+	opacity: 0.7;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	float: left;
+	display: inline-block;
+}
+#mapa {
+	margin-top:  3em;
+	width: 20em;
+	height: 16em;
+	margin-left: 2%;
+	margin-right: 2%;
+	position: relative;
+	display: inline-block;
+	float: left;
+	opacity: 0.7;
+
+}
+
 #okvir {
+	margin-top: 1em;
 	width: 16em;
 	height: 16em;
-	/*position: relative;*/
-	/*margin-top: 40%;
-	/*width: 50%;*/
 }
 .col-md-3{
-	padding-left: 2%;
-	padding-right: 2%;
+	margin-top: 2%;
 	text-align: justify;
 }
 .col-md-4{
 	background-color: #000;
 	opacity: 0.7;
-	padding-left: 2%;
-	padding-right: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: inline-block;
+	float: left;
+
 }
 .col-md-3 p{
 	color: #fff;
@@ -109,12 +159,36 @@ nav{
 #logo{
 	font-size: 50px;
 }
-#desno{
-	width: 3em;
-	height: 16em;
-	margin-right: 5%;
-	float: right;
-	background-color: #000;
-	opacity: 0.7;
-}
 
+#prvi,#drugi {
+	width: 100%;
+	height: 19%;
+	margin-bottom: 1%;
+}
+#treci {
+	height: 60%;
+}
+#prvi p input, #drugi p label {
+	width: 49%;
+	height: 3em; 
+	text-align: center;
+	background-color: #000;
+	opacity: 0.6;
+	color: #fff;
+	border: none;
+}
+#drugi p label{
+	padding-top: 2%;
+	font-family: "Arial";
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: none;
+}
+#treci textarea{
+	width: 99%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.6;
+	color: #fff;
+	border: none;
+}

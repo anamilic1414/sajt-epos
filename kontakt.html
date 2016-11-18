@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Контакт</title>
-		<meta charset = UTF-8 />
+		 <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
 		<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
 		<link rel="stylesheet" type="text/css" href="stil.css">
@@ -14,13 +15,11 @@
 
 <body id="on">
 
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
   			<div class="container-fluid">
     		<div class="navbar-header">
     			<a href="index.html" id="logo" class="navbar-brand">ф а б б р и к а</a>
       		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
@@ -38,20 +37,47 @@
 			</div>
 			</nav>
 
-  <div id="kolone3">
-    <div class="col-md-4">
-      <div id="forma"></div>
-    </div>
-    <div class="col-md-4">
-      <div id="okvir"></div>
-    </div>
-    <div class="col-md-4">
-      <div id="okvir"></div>
-    </div>
+  <div id="koloneK">
+    
+          <div id="forma">
+        <div id="prvi">
+          <p><input type="text" name="text" placeholder="име и презиме">
+          <input type="email" name="email" placeholder="e-mail"></p>
+        </div>
+        <div id="drugi"><p>
+          <label>име и презиме</label>
+          <label>e-mail</label>
+        </p>
+        </div>
+        <div id="treci">
+          <textarea id="komentar" name="comment" placeholder="започни куцање"></textarea>
+        </div>
+      </div>
+            <div id="adresa">
+        
+        <p style="height:30%; padding-left: 34%; padding-top:20%;position:absolute;">0607117411</p>
+        <p style="height:50%; padding-left: 17%; padding-top:35%;position:absolute;">srdjan.milic.ns@gmail.com</p>
+        <p style="height:10%; bottom:0px;padding-left: 30%; position:absolute;">Срђан Милић</p>
+        
+      </div>
+          <div id="mapa">
+          <script type="text/javascript" src="js/funkcije.js"></script>
+          <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+      
+    
   </div>
+    
 
-  <div id="desno">
-  </div>
+    
+   
+ 
+      
+    </div>
+
+
+ <div id="footer">
+      <p></p>
+      </div>
 
 
 </body>
