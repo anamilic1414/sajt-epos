@@ -2,16 +2,30 @@ body{
 	font-family: "Arial";
 	font-size: 16px;
 	color: #ffffff;
+	background-color: #000;
 }
-html{
+#in{
 	background: url(img/kuhinje.jpg) no-repeat center center fixed;
+}
+#pr{
+	background: url(img/pro.jpg) no-repeat center center fixed;
+}
+#iz{
+	background: url(img/izgradnja.jpg) no-repeat center center fixed;
+}
+
+#pr,#in,#iz,#di {
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
+#on,#di{
+	background-color: #42f4ad;
+}
 
-@media (max-width: 1000px) { /* Specific to this particular image */
+
+@media (max-width: 600px) { /* Specific to this particular image */
   #logo {
   	font-size: 10px;
   }
@@ -30,6 +44,19 @@ nav{
 	padding-right: 5%;
 	opacity: 0.7;
 
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-item {
+	margin: -4px;
+    width: 1em;
+    font-size: 12px;
+    color: #fff;
 }
 #kolone3 {
 	margin-top: 15em;
@@ -192,3 +219,4 @@ nav{
 	color: #fff;
 	border: none;
 }
+
