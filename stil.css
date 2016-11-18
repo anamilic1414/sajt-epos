@@ -1,0 +1,120 @@
+body{
+	font-family: "Arial";
+	font-size: 16px;
+	color: #ffffff;
+}
+html{
+	background: url(img/kuhinje.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#desno{
+	float: right;
+	position: relative;
+	margin-right: 2%;
+	width: 5%;
+	height: 15%;
+	background-color: #000;
+}
+
+img.bg {
+  /* Set rules to fill background*/ 
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+#myNavbar{
+	padding-left: 50%;
+}
+nav{
+	
+	margin-top: 4%;
+	margin-right: 5%;
+	margin-left: 5%;
+	opacity: 0.6;
+
+}
+#kolone3 {
+	margin-top: 20%;
+	display:inline-block;	
+	position: relative;
+	float: left;
+	margin-right: 15%;
+	margin-left: 5%;
+}
+
+#kolone {
+	margin-top: 10%;
+	display:inline-block;	
+	position: relative;
+	float: left;
+	margin-right: 15%;
+	margin-left: 5%;
+}
+#okvir img{
+	width: 16em;
+	height: 16em;
+}
+#forma{
+	width: 30em;
+	height: 16em;
+	margin-left: 2%;
+	padding-right:2%; 
+	margin-right: 2%;
+	padding-right: 2%;
+}
+#okvir {
+	width: 16em;
+	height: 16em;
+	/*position: relative;*/
+	/*margin-top: 40%;
+	/*width: 50%;*/
+}
+.col-md-3{
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: justify;
+}
+.col-md-4{
+	background-color: #000;
+	opacity: 0.7;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.col-md-3 p{
+	color: #fff;
+	height: 10em;
+	width: 16em;
+	display: inline-block;
+	position: relative;
+}
+#logo{
+	font-size: 50px;
+}
+#desno{
+	width: 3em;
+	height: 16em;
+	margin-right: 5%;
+	float: right;
+	background-color: #000;
+	opacity: 0.7;
+}
+
