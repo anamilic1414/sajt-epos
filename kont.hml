@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Пројектовање</title>
+	<title>Контакт</title>
 		   <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,7 +16,7 @@
 </head>
 
 
-<body id="pr">
+<body id="on">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   			<div class="container-fluid">
@@ -35,38 +35,49 @@
       		</button>
     		</div>
     		<div class="collapse navbar-collapse" id="myNavbar">
-      			<ul class="nav navbar-nav navbar-right">
-      				<li class="active"><a href="#">Пројектовање</a></li>
+      			<ul class="nav navbar-nav">
+      				<li><a href="projekti.html">Пројектовање</a></li>
       				<li><a href="namestaj.html">Намештај</a></li>
       				<li><a href="izgradnja.html">Изградња</a></li>
         			<li><a href="onama.html">О нама</a></li>
-        			<li><a href="kontakt.html">Контакт</a></li>
+        			<li  class="active"><a href="#">Контакт</a></li>
       				</ul>
     			</div>  
 			</div>
 			</nav>
 
+  <div id="koloneK">
     
-    <div id="kolone">
+          <div id="forma">
+        <div id="prvi">
+          <p><input type="text" name="text" placeholder="име и презиме">
+          <input type="email" name="email" placeholder="e-mail"></p>
+        </div>
+        <div id="drugi"><p>
+          <label>име и презиме</label>
+          <label>e-mail</label>
+        </p>
+        </div>
+        <div id="treci">
+          <textarea id="komentar" name="comment" placeholder="започни куцање"></textarea>
+        </div>
+      </div>
+            <div id="adresa">
+        
+        <p style="height:30%; padding-left: 34%; padding-top:20%;position:absolute;">0607117411</p>
+        <p style="height:50%; padding-left: 17%; padding-top:35%;position:absolute;">srdjan.milic.ns@gmail.com</p>
+        <p style="height:10%; bottom:0px;padding-left: 30%; position:absolute;">Срђан Милић</p>
+        
+      </div>
+          <div id="mapa">
+          <script type="text/javascript" src="js/funkcije.js"></script>
+          <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+      
     
-          <div class="col-md-4">
-            <p>Пројектовање</p>
-            <img class="img-responsive" src="img/kuh.jpg">
-          </div>
-
-          <div class="col-md-4">
-            <p>Пројектовање ентеријера</p>
-            <img  class="img-responsive" src="img/kuh.jpg">
-          </div>
-
-          <div class="col-md-4">
-            <p>Пројектовање намешаја</p>
-            <img class="img-responsive" src="img/kuh.jpg">
-          </div> 
-
+  </div> 
+      
     </div>
-
- <div id="link"></div>
+     <div id="link"></div>
 
 </body>
 

@@ -5,7 +5,7 @@ body{
 	background-color: #000;
 }
 #in{
-	background: url(img/kuhinje.jpg) no-repeat center center fixed;
+	background: url(img/kuh.jpg) no-repeat center center fixed;
 }
 #pr{
 	background: url(img/pro.jpg) no-repeat center center fixed;
@@ -19,20 +19,23 @@ body{
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+  	margin-right: 5%;
+  	margin-left: 5%;
 }
 #on,#di{
 	background-color: #42f4ad;
 }
+#on{
+	margin-right: 5%;
+  	margin-left: 5%;
+}
 
-
-@media (max-width: 600px) { /* Specific to this particular image */
-  #logo {
-  	font-size: 10px;
-  }
+@media (max-width: @screen-sm) {
+    #logo{font-size: 14px;}
 }
 
 #myNavbar{
-	padding-left: 50%;
+	padding-right: 5%;
 }
 nav{
 	margin-right: 5%;
@@ -41,7 +44,6 @@ nav{
 	background-color: #5f5f5f;
 	font-color: #ffffff !important;
 	margin-top: 4%;
-	padding-right: 5%;
 	opacity: 0.7;
 
 }
@@ -58,26 +60,15 @@ nav{
     font-size: 12px;
     color: #fff;
 }
-#kolone3 {
-	margin-top: 15em;
-	display:inline-block;	
-	position: relative;
-	float: left;
-	margin-right: 15%;
-	margin-left: 5%;
-}
-
 #kolone {
-	margin-top: 15em;
+	margin-top: 10em;
 	display:inline-block;	
 	position: relative;
 	float: left;
-	margin-right: 5%;
-	margin-left: 5%;
 	width: 90%;
 }
 #koloneK {
-	margin-top: 24em;
+	margin-top: 19em;
 	display:inline-block;	
 	position: relative;
 	float: left;
@@ -158,31 +149,84 @@ nav{
 
 }
 
-#okvir {
+.col-md-3 #okvir img {
 	margin-top: 1em;
-	width: 16em;
-	height: 16em;
+	width: 15em;
+	height: 15em;
 }
 .col-md-3{
-	margin-top: 2%;
-	text-align: justify;
-}
-.col-md-4{
-	background-color: #000;
-	opacity: 0.7;
-	margin-left: 2%;
+	margin-top: 1em;
+	width: 15em;
 	margin-right: 2%;
-	display: inline-block;
-	float: left;
-
 }
 .col-md-3 p{
+	text-align: justify;
 	color: #fff;
 	height: 10em;
-	width: 16em;
+	width: 100%; 
 	display: inline-block;
 	position: relative;
 }
+#link {
+	width: 4em;
+	height: 15em;
+	float: right;
+	background-color: #000;
+	opacity: 0.6;
+	margin-top: 22.6em;
+}
+#link img {
+	margin-top: 10%;
+	margin-right: 10%;
+	margin-left: 10%;
+	width: 80%;
+}
+
+
+.col-md-4{
+	margin-top: 1em;
+	width: 20em;
+	margin-right: 3%;
+}
+.col-md-4 p{
+	text-align: center;
+	color: #fff;
+	height: 10em;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.col-md-4 img{
+	margin-top: 1em;
+	height: 15em;
+	width: 20em;
+	
+}
+
+
+
+#nam img {
+	margin-top: 1em;
+	width: 30em;
+	height: 15em;
+}
+.col-md-6 {
+	margin-top: 1em;
+	width: 30em;
+	margin-right: 5%;
+}
+.col-md-6 p{
+	padding-top: 2em;
+	color: #fff;
+	height: 10em;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	
+}
+
+
+
 #logo{
 	font-size: 50px;
 }
@@ -220,3 +264,14 @@ nav{
 	border: none;
 }
 
+.fotorama img {
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0px !important;
+	left:0px !important;
+}
+.fotorama {
+	width: 100%;
+	margin-top: 10em;
+
+}

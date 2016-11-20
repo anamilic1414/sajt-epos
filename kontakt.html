@@ -2,21 +2,25 @@
 <html>
 <head>
 	<title>Контакт</title>
-		 <meta charset="utf-8">
+		   <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="js/bootstrap.js">
-		<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
-		<link rel="stylesheet" type="text/css" href="stil.css">
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  <meta name="viewport" content="width=device-width">
-    
-    <script src="js/funkcije.js"></script>
+
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <link href="fotorama-4.6.2/fotorama.css" rel="stylesheet">
+      <script src="fotorama-4.6.2/fotorama.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/bootstrap.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/funkcije.js"></script>
+      <link rel="stylesheet" type="text/css" href="stil.css">
 </head>
 
 
 <body id="on">
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   			<div class="container-fluid">
     		<div class="navbar-header">
     			<p><a href="index.html" id="logo" class="navbar-brand">ф а б б р и к а</a>
@@ -33,9 +37,9 @@
       		</button>
     		</div>
     		<div class="collapse navbar-collapse" id="myNavbar">
-      			<ul class="nav navbar-nav">
+      			<ul class="nav navbar-nav navbar-right">
       				<li><a href="projekti.html">Пројектовање</a></li>
-      				<li><a href="dizajn.html">Намештај</a></li>
+      				<li><a href="namestaj.html">Намештај</a></li>
       				<li><a href="izgradnja.html">Изградња</a></li>
         			<li><a href="onama.html">О нама</a></li>
         			<li  class="active"><a href="#">Контакт</a></li>
@@ -43,6 +47,18 @@
     			</div>  
 			</div>
 			</nav>
+
+
+    <div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+ <img src="img/1.jpg" class = "foto">
+  <img src="img/2.jpg" class = "foto" class = "img-responsive">
+  <img src="img/3.jpg" class = "foto">
+  <img src="img/4.jpg" class = "foto">
+ 
+</div>
+
+
+
 
   <div id="koloneK">
     
@@ -72,20 +88,10 @@
           <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
       
     
-  </div>
-    
-
-    
-   
- 
+  </div> 
       
     </div>
-
-
- <div id="footer">
-      <p></p>
-      </div>
-
+     <div id="link"></div>
 
 </body>
 
