@@ -16,9 +16,7 @@ body{
     #logo{font-size: 14px;}
 }
 
-#myNavbar{
-	padding-right: 5%;
-}
+
 nav{
 	margin-right: 5%;
 	margin-left: 5%;
@@ -283,3 +281,44 @@ body {
 a, a:active, a:hover{
 	color: #fff;
 }
+.dropbtn {
+    background-color: #000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #000;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
