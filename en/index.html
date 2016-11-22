@@ -2,56 +2,183 @@
 <html>
 
 	<head>
-		<title>Fabbrika DOO 2015</title>
+		<title>Фаббрика ДОО 2015</title>
 		  <meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../js/bootstrap.js">
-		<link rel="stylesheet" type="text/css" href="../js/bootstrap.min.js">
-			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	
-	  <link rel="stylesheet" type="text/css" href="../stil.css">
-	  <script src="../js/funkcije.js"></script>
+
+  		<script src="js/jquery-3.1.1.js"></script>
+      <script src="js/jquery-3.1.1.min.js"></script>
+       <script src="js/jquery.slides.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/bootstrap.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/funkcije.js"></script>
+    <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css">
+		 <link rel="stylesheet" type="text/css" href="stil.css">
+      
+	<!--	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	 
 	</head>
 	
 	<body id="in">
-		<div id="ceo">
+  
+
 
 			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   			<div class="container-fluid">
     		<div class="navbar-header">
-    			<p><a href="index.html" id="logo" class="navbar-brand">f a b b r i k a</a>
-    			<div class="flex-container">
-  					<div class="flex-item">2</div>
-  					<div class="flex-item">0</div>
-  					<div class="flex-item">1</div>
-  					<div class="flex-item">5</div>
-				</div></p>
+    			
       		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
         		<span class="icon-bar"></span>
       		</button>
+          <p><a href="index.html" id="logo" class="navbar-brand">ф а б б р и к а<sub style="font-size:16px;">2015</sub></a>
+          </p>
     		</div>
-    		<div class="collapse navbar-collapse" id="myNavbar">
-      			<ul class="nav navbar-nav">
-      				<li><a href="projekti.html">Пројектовање</a></li>
-      				<li><a href="dizajn.html">Намештај</a></li>
-      				<li><a href="izgradnja.html">Изгадња</a></li>
-        			<li><a href="about.html" onclick="onama()">About us</a></li>
-        			<li><a href="contact.html">Contact</a></li>
-      				</ul>
-    			</div>  
+    		<div id="myNavbar" class="collapse navbar-collapse" >
+      			<ul class="nav navbar-nav navbar-right">
+      				<li><a href="projekti.html">Designing</a></li>
+      				<li><a href="namestaj.html">Furniture</a></li>
+      				<li><a href="izgradnja.html">Construction</a></li>
+              <li><a href="reference.html">References</a></li>
+        			<li><a href="onama.html" onclick="onama()">About us</a></li>
+        			<li>
+              <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">sr/en</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">Српски</a>
+                      <a href="#about">English</a>
+                      </div>
+                    </div>
+                    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</li>
+      			</ul>
+    			</div>
 			</div>
 			</nav>
-			
-			<!--Komentar-->
-			<div id="footer">
-			<p></p>
-			</div>
-		
-		</div>
-	
-	
+
+       <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/Pozadina.jpg');"></div>
+                <div class="carousel-caption">
+                    <a href="namestaj.html"><h2>Furniture</h2></a>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/projektov.jpg');"></div>
+                <div class="carousel-caption">
+                    <a href="projekti.html"><h2>Designing</h2></a>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/izgradnja.jpg');"></div>
+                <div class="carousel-caption">
+                    <a href="izgradnja.html"><h2>Construction</h2></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+<!--
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>ф а б б р и к а<sub style="font-size:16px;">2015</sub></h3>
+
+        <p class="footer-links">
+          <a href="projekti.html">Пројектовање</a>
+          ·
+          <a href="namestaj.html">Намештај</a>
+          ·
+          <a href="izgradnja.html">Изградња</a>
+          ·
+          <a href="reference.html">Референце</a>
+          ·
+          <a href="onama.html">О нама</a>
+        </p>
+
+        <p class="footer-company-name">ф а б б р и к а &copy; 2016</p>
+
+        <div class="footer-icons">
+
+          <a href="https://www.facebook.com/fabbrika2015/?ref=ts&fref=ts"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p>Контактирајте нас</p>
+
+        <form action="#" method="post">
+
+          <input type="text" name="email" placeholder="Email" />
+          <textarea name="message" placeholder="Message"></textarea>
+          <button>Пошаљи</button>
+
+        </form>
+
+      </div>
+
+    </footer>
+	-->
+
+
+<script>
+    $('.carousel').carousel({
+        interval: 3000 //changes the speed
+    })
+    </script>
+
 	</body>
 
 	
