@@ -7,12 +7,13 @@
 
       <script src="js/jquery-3.1.1.js"></script>
       <script src="js/jquery-3.1.1.min.js"></script>
-      <link href="fotorama-4.6.2/fotorama.css" rel="stylesheet">
-      <script src="fotorama-4.6.2/fotorama.js"></script>
+      
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <script src="js/bootstrap.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <link href="fotorama-4.6.2/fotorama.css" rel="stylesheet">
+      <script src="fotorama-4.6.2/fotorama.js"></script>
       <script src="js/funkcije.js"></script>
       <link rel="stylesheet" href="css/footer-distributed-with-contact-form.css">
       <link rel="stylesheet" type="text/css" href="stil.css">
@@ -38,7 +39,16 @@
       				<li><a href="izgradnja.html">Изградња</a></li>
               <li  class="active"><a href="#">Референце</a></li>
         			<li><a href="onama.html">О нама</a></li>
-        			
+        			<li>
+              <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">sr/en</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#home">Српски</a>
+                      <a href="#about">English</a>
+                      </div>
+                    </div>
+
+</li>
       				</ul>
     			</div>  
 			</div>
@@ -54,9 +64,185 @@
 </div>
 
 
+        <div class="container">
+          <div id="main_area">
+               <!-- Slider -->
+            <div class="row">
+              <div class="col-sm-6" id="slider-thumbs">
+                      <!-- Bottom switcher of slider -->
+                <ul class="hide-bullets">
+
+                  <li class="col-sm-3">
+                    <a class="thumbnail" id="carousel-selector-0">
+                    <img src="img/1.jpg"/>
+                    </a>
+                  </li>
+
+                  <li class="col-sm-3">
+                    <a class="thumbnail" id="carousel-selector-1">
+                    <img src="img/2.jpg"/>
+                    </a>
+                  </li>
+
+                  <li class="col-sm-3">
+                    <a class="thumbnail" id="carousel-selector-2">
+                    <img src="img/3.jpg"/>
+                    </a>
+                  </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-3">
+                                  <img src="img/4.jpg"/>
+                                </a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-4">
+                                  <img src="img/5.jpg"/>
+                                </a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-5">
+                                  <img src="img/6.jpg"/>
+                                </a>
+                            </li>
+
+                        <!--    <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-6">
+                                  <img src="img/h7.jpg"/>
+                                </a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-7">
+                                  <img src="img/h8.jpg"/>
+                                </a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-8">
+                                  <img src="img/h9.jpg"/>
+                                </a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-9">
+                                  <img src="img/h10.jpg"/>
+                                </a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-10">
+                                  <img src="img/h11.jpg"/>
+                                </a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-11">
+                                  <img src="img/h12.jpg"/>
+                                </a>
+                            </li> -->
+                </ul>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="col-xs-12" id="slider">
+                            <!-- Top part of the slider -->
+                            <div class="row">
+                                <div class="col-sm-12" id="carousel-bounding-box">
+                                    <div class="carousel slide" id="myCarousel">
+                                      <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="img/1.jpg"/>
+                                              </div>
+
+                                            <div class="item" data-slide-number="1">
+                                                <img src="img/2.jpg"/>
+                                              </div>
+
+                                            <div class="item" data-slide-number="2">
+                                                <img src="img/3.jpg"/>
+                                              </div>
+
+                                            <div class="item" data-slide-number="3">
+                                                <img src="img/4.jpg"/>
+                                              </div>
+
+                                            <div class="item" data-slide-number="4">
+                                                <img src="img/5.jpg"/>
+                                              </div>
+
+                                            <div class="item" data-slide-number="5">
+                                                <img src="img/6.jpg"/>
+                                              </div>
+                                    
+                                      <!--      <div class="item" data-slide-number="6">
+                                                <img src="img/h7.jpg"/>
+                                              </div>
+                                    
+                                            <div class="item" data-slide-number="7">
+                                                <img src="img/h8.jpg"/>
+                                              </div>
+                                    
+                                            <div class="item" data-slide-number="8">
+                                                <img src="img/h9.jpg"/>
+                                              </div>
+                                    
+                                            <div class="item" data-slide-number="9">
+                                                <img src="img/h10.jpg"/>
+                                              </div>
+                                    
+                                            <div class="item" data-slide-number="10">
+                                                <img src="img/h11.jpg"/>
+                                              </div>
+                                    
+                                            <div class="item" data-slide-number="11">
+                                                <img src="img/h12.jpg"/>
+                                              </div>  -->
+                                          </div>
+                                        <!-- Carousel nav -->
+                                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                jQuery(document).ready(function($) {         
+                  $('#myCarousel').carousel({
+                    interval: 3000
+                  });
+           
+                      //Handles the carousel thumbnails
+                  $('[id^=carousel-selector-]').click(function () {
+                        var id_selector = $(this).attr("id");
+                        try {
+                          var id = /-(\d+)$/.exec(id_selector)[1];
+                          console.log(id_selector, id);
+                          jQuery('#myCarousel').carousel(parseInt(id));
+                        } catch (e) {
+                            console.log('Regex failed!', e);
+                        }
+                    });
+                      // When the carousel slides, auto update the text
+                      $('#myCarousel').on('slid.bs.carousel', function (e) {
+                            var id = $('.item.active').data('slide-number');
+                          $('#carousel-text').html($('#slide-content-'+id).html());
+                      });
+                });
+                    </script>
 
 
-  <div id="koloneK">
+
+ <!-- <div id="koloneK">
     
           <div id="forma">
         <div id="prvi">
@@ -87,7 +273,7 @@
   </div> 
       
     </div>
-    
+    -->
     <footer class="footer-distributed">
 
       <div class="footer-left">
@@ -111,9 +297,9 @@
         <div class="footer-icons">
 
           <a href="https://www.facebook.com/fabbrika2015/?ref=ts&fref=ts"><i class="fa fa-facebook"></i></a>
-         <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
           <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a> -->
+          <a href="#"><i class="fa fa-github"></i></a>
 
         </div>
 
