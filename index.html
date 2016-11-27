@@ -73,13 +73,19 @@
                 <!-- Set the first background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('img/Pozadina.jpg');"></div>
                 <div class="carousel-caption">
+                    <div id="prikaz">
+                      <h2>Добродошли</h2>
+                      <p>Ф А Б Б Р И К А 2015</p>
+                    </div>
                     <a href="namestaj.html"><h2>Намештај</h2></a>
+                    
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('img/projektov.jpg');"></div>
                 <div class="carousel-caption">
+                  
                     <a href="projekti.html"><h2>Пројектовање</h2></a>
                 </div>
             </div>
@@ -87,6 +93,7 @@
                 <!-- Set the third background image using inline CSS below. -->
                 <div class="fill" style="background-image:url('img/izgradnja.jpg');"></div>
                 <div class="carousel-caption">
+                  
                     <a href="izgradnja.html"><h2>Изградња</h2></a>
                 </div>
             </div>
@@ -102,60 +109,22 @@
 
     </header>
 
-<!--
-<footer class="footer-distributed">
-
-      <div class="footer-left">
-
-        <h3>ф а б б р и к а<sub style="font-size:16px;">2015</sub></h3>
-
-        <p class="footer-links">
-          <a href="projekti.html">Пројектовање</a>
-          ·
-          <a href="namestaj.html">Намештај</a>
-          ·
-          <a href="izgradnja.html">Изградња</a>
-          ·
-          <a href="reference.html">Референце</a>
-          ·
-          <a href="onama.html">О нама</a>
-        </p>
-
-        <p class="footer-company-name">ф а б б р и к а &copy; 2016</p>
-
-        <div class="footer-icons">
-
-          <a href="https://www.facebook.com/fabbrika2015/?ref=ts&fref=ts"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-
-        </div>
-
-      </div>
-
-      <div class="footer-right">
-
-        <p>Контактирајте нас</p>
-
-        <form action="#" method="post">
-
-          <input type="text" name="email" placeholder="Email" />
-          <textarea name="message" placeholder="Message"></textarea>
-          <button>Пошаљи</button>
-
-        </form>
-
-      </div>
-
-    </footer>
-	-->
-
 
 <script>
-    $('.carousel').carousel({
+$('#prikaz').hide();
+
+   $('.carousel').carousel({
         interval: 3000 //changes the speed
-    })
+        
+    });
+       $(document).ready(function(){
+       
+        $('#prikaz').slideToggle(2000);
+       
+      
+      }); 
+
+
     </script>
 
 	</body>

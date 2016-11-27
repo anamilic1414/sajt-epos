@@ -323,4 +323,25 @@ a, a:active, a:hover{
 
 .dropdown a:hover {background-color: #f1f1f1}
 
-.show {display:block;}
+#prikaz h2{
+	font-size: 52px;
+}
+#prikaz p {
+	font-size: 36px;
+}
+
+#kol {
+	text-align: center;
+	
+	margin-top: 10em;
+	margin-right: 20%;
+	margin-left: 20%;
+
+}
+.col-xs-3{
+
+	background: url("img/1.jpg") 30em;
+	background-size: cover;
+	opacity: 0.7;
+	height: 30em;
+}
